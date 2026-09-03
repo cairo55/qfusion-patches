@@ -13,6 +13,9 @@
 #ifdef max
 	#undef max
 #endif
+#ifdef clamp
+	#undef clamp
+#endif
 
 // STD
 #include <string>

@@ -184,7 +184,7 @@ public:
 				else
 				{
 					fov_x = prop->Get<float>();
-					clamp(fov_x, 1.0f, 179.0f);
+					fov_x = std::clamp(fov_x, 1.0f, 179.0f);
 				}
 				RecomputePosition = true;
 			}
@@ -198,7 +198,7 @@ public:
 				else
 				{
 					fov_y = prop->Get<float>();
-					clamp(fov_y, 1.0f, 179.0f);
+					fov_y = std::clamp(fov_y, 1.0f, 179.0f);
 				}
 				RecomputePosition = true;
 			}
