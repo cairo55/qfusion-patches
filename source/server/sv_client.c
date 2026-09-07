@@ -65,7 +65,7 @@ void SV_ClientCloseDownload( client_t *client )
 bool SV_ClientConnect( const socket_t *socket, const netadr_t *address, client_t *client, char *userinfo,
 						  int game_port, int challenge, bool fakeClient, bool tvClient)
 {
-	int i;
+	size_t i;
 	edict_t	*ent;
 	int edictnum;
 

@@ -406,7 +406,7 @@ bool R_SurfPotentiallyFragmented( const msurface_t *surf )
 */
 static void R_RecursiveFragmentNode( void )
 {
-	int stackdepth = 0;
+	size_t stackdepth = 0;
 	float dist;
 	bool inside;
 	mnode_t	*node, *localstack[2048];
